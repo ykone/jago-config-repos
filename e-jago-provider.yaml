@@ -3,7 +3,7 @@ spring:
     name: e-jago-provider
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://postgresql:5432/dev
+    url: jdbc:postgresql://localhost:5432/ejago_provider_db
     username: dev
     password: dev
     hikari:
