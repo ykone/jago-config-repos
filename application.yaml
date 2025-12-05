@@ -3,3 +3,11 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
       #defaultZone: http://localhost:8761/eureka,http://localhost:8761/eureka  # On peut en ajouter plusieurs
+
+resilience4j:
+  retry:
+    instances:
+      caisffExternalRequest:
+        max-attempts: 5
+        wait-duration:
+          seconds: 2
